@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply px-6 py-2 font-medium rounded-md inline-flex items-center justify-center
+    }
+    .form-input {
+        @apply mt-1 block w-full text-gray-900 rounded-md border-gray-300 shadow-sm focus:border-cyan-600 focus:ring focus:ring-cyan-600 focus:ring-opacity-30;
+    }
+    .form-input.is-invalid {
+        @apply border-red-500 focus:outline-none focus:ring focus:ring-red-600 focus:ring-opacity-30;
+    }
+  }
